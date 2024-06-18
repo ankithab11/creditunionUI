@@ -1,0 +1,33 @@
+.search-member-container{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.search-member-container table{
+    width: 100%;
+}
+
+.search-box {
+   display: flex;
+   justify-content: space-between;
+}
+table {
+    background-color: #dddddd;
+}
+th {
+    background-color: grey;
+}
+
+th, td {
+ padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .search-member-container{
+        width: 100%;
+    }
+    .search-box {
+        width: 100%;
+    }
+ }

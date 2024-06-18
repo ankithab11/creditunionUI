@@ -1,0 +1,27 @@
+<div class="search-member-container">
+    <div class="search-box input-group mb-3">
+        <div>
+            <button type="button" class="btn btn-primary" (click)="createAccount()">Create Account</button>
+        </div>
+        <div>
+            <input type="text" class="form-control" placeholder="Search" aria-label="Search" #searchbar/>
+        </div>
+    </div>
+    <table class="table table-striped">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Address</th>
+        </tr>
+        @for (employee of employees; track employee.id) {
+            <tr scope="row">
+                <td>{{employee.id}}</td>
+                <td>{{employee.firstName}}</td>
+                <td>{{employee.lastName}}</td>
+                <td>{{employee.address}}</td>
+            </tr>
+        }
+        
+    </table>
+</div>
